@@ -1,33 +1,52 @@
-<?php
-//Get username
-$user = $_GET('u');
-?>
+<!--Use HTML-->
+<!DOCTYPE html>
 <html>
     <head>
         <title>Chatroom</title> 
-        <link rel ='stylesheet' type='text/css' href='css/style.css'/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel ='stylesheet' type='text/css' href='css/style1.css'/>
+        <<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
-        <nav>
-            <a href="/dashboard">Dashboard</a> |
-            <a>Community Chatroom</a> |
+    <body class="content">
+        <nav class="topnav">
+            <a href="/dashboard">Dashboard</a> 
+            <a class="active">Community Chatroom</a> 
             <a href="/">Logout</a>
         </nav>
         <div class='chatContainer'>
            <div class='chatHeader'>
-                <h3> Midwest Groupchat <%=@region%></h3>
+                <h3>Midwest Groupchat</h3>
            </div>
-          <div class='chatMessages'></div>
+          <div class='chatMessages'>
+              <%=@message%>
+          </div>
           <div class='chatBottom'>
-            <form action'#' onSubmit='return false;' id='chatForm' method="POST">
-                <input type='hidden' id='name' value='<?php echo $user; ?>'/>
-                <input type="radio" name="gender" value="male"> Congratulations! You did it!<br>
-                <input type="radio" name="gender" value="female"> Nice job! Keep Going!<br>
-                <input type="radio" name="gender" value="other"> Remember to resist the urge!<br>
-                <button type="submit">Post</button>
+            <form action=chatroom method=post>
+                <select class"custom-select" name="message">
+                    <option value="Congratulations! You did it!">Congratulations! You did it!</option>
+                    <option value="Nice job! Keep going!">Nice job! Keep Going!</option>
+                    <option value="Remember guys...resist the urge!">Remember guys...resist the urge!</option>
+                    <option value="Yes! I made it through the day">Yes! I made it through the day</option>
+                    <option value="Feeling confident in myself today!">Feeling confident in myself today!</option>
+                </select>
+                <button class="button" type="submit">Post Message</button>
             </form>
           </div>
         </div>
     </body>
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4><center>Questions or Concerns?</center></h4>
+            <div><center>Contact
+                <a href="">Us</a>
+            </center></div>
+        </div>
+        <div class="w3-container w3-theme-l1">
+          <p><center>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></center></p>
+          <p><center>© 2018 Kode with Klossy Detroit</center></p>
+        </div>
+    </footer>
 </html>

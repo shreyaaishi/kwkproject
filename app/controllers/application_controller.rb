@@ -43,13 +43,15 @@ class ApplicationController < Sinatra::Base
   end 
   
   post '/chatroom'do
-    
     @region=params[:region]
+    erb:chatroom
+    
+    @message=params[:message]
     erb:chatroom
   end
   
   get '/logout' do
     erb:logout 
   end 
-
 end
+

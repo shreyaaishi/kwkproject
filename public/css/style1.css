@@ -1,0 +1,156 @@
+/*Background CSS*/
+.content {
+    background-color: #F3F3F3;
+    padding: 10px;
+
+}
+/*Content Margins CSS*/
+.margin{
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+/*Button CSS*/
+.button {
+    background-color: #000; 
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/*Navigation Bar CSS*/
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #D63D3D;
+        overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f3f3f3;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #f3f3f3;
+        color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #000;
+        color: white;
+    }
+    
+    
+/*Dashboard CSS*/
+.dashboardBody {
+    /*margin: 40px;*/
+    background-color:#f3f3f3;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 150px ) ;
+    background-color: #f3f3f3;
+    }
+.box {
+    background-color:#D74040;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+}
+.inner-grid { 
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: repeat(auto-fill,150px);
+}
+.a {
+   grid-column: 1 / 3;
+}
+
+.b {
+   grid-column: 1 / 10 ;
+   grid-row: 2;
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: auto auto;
+}
+.c {
+   grid-column: 1 / 2 ;
+   grid-row: 2 ;
+}
+.d {
+   grid-column: 2 / 5 ;
+   grid-row: 2 ;
+}
+.e {
+   grid-column: 1 / 10;
+   grid-row: 3;
+}
+
+/*Chatroom CSS*/
+*{
+    font-family:'Open Sans';
+    box-sizing: border-box;
+}
+
+.chatContainer {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #ddd;
+}
+
+.chatContainer > .chatHeader {
+    width: 100%;
+    backgound: white;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chatContainer > .chatHeader h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #333;
+}
+
+.chatContainer>.chatMessages{
+    height:420px;
+    border-bottom: 1px solid #ddd;
+    /*   overflow-y: scroll; */
+}
+
+.chatContainer>.chatBottom form input[type='submit']{
+    padding: 6px;
+    background: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.chatContainer>.chatBottom form input [type='text']{
+    width: 85%;
+    padding: 3px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
+    height:150px;  
+}
+
+.cm {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}

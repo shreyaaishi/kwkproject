@@ -2,37 +2,61 @@
 <html>
     <head>
         <title>Sign Up Today!</title>
-       <link rel="stylesheet" type="text/css" href="/css/style.css">
+       <link rel="stylesheet" type="text/css" href="/css/style1.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    
-        
-     <body id= 'page1'>
-        
+     <body class="content">
+        <nav class="topnav">
+            <a href="/">Home</a>
+            <a href="/whyquit">Why Quit Smoking</a>
+            <a>Our Method</a>
+            <a href="/login">Login</a> 
+        </nav>
         <h1><center>Sign Up Today!</center></h1>
-        <form action="/dashboard" method="post"><center>
+        <form action="dashboard" method="post"><center>
             <input type="text" name="first_name" placeholder="First Name" size="50"> <br><br>
             <input type="text" name="last_name" placeholder="Last Name" size="50"> <br><br>
             <input type="text" name="age" placeholder="Age" size="50"> <br><br>
-            Gender:<br>
-                <input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-                <input type="radio" name="gender" value="other"> Other<br>
-                <input type="radio" name="gender" value="prefer_not_to_say"> Prefer Not to Say<br><br>
-            Region: <br>
-                <input type="text" name="region" placeholder="Geographical Region" size="50"><br>
-                Ex: Northeast, Southheast, Midwest, Southwest, West<br><br>
-                <!--<input type="radio" name="region" value="northeast"> Northeast<br>-->
-                <!--<input type="radio" name="region" value="southeast"> Southheast<br>-->
-                <!--<input type="radio" name="region" value="midwest"> Midwest<br>-->
-                <!--<input type="radio" name="region" value="southwest"> Southwest<br>-->
-                <!--<input type="radio" name="region" value="west"> West<br><br>-->
+            Gender:
+                <select name="gender">
+                    <option selected></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer not to say">Prefer Not To Say</option>
+                </select><br><br>
+            Region:
+                <select name="region">
+                    <option selected></option>
+                    <option value="Northeast">Northeast</option>
+                    <option value="Southheast">Southheast</option>
+                    <option value="Midwest">Midwest</option>
+                    <option value="Southwest">Southwest</option>
+                    <option value="West">West</option>
+                </select><br><br>
             <input type="text" name="cigarettes" placeholder="How many cigarettes on average do you smoke in a day?" size="50"><br>
             Note: 1 pack contains 20 cigarettes<br><br>
             <input type="text" name= "email" placeholder="Email" size="50"><br><br>
             <input type="text" name= "username" placeholder="Username" size="50"><br><br>
             <input type="text" name= "password" placeholder="Password" size="50"><br><br>
-            <button type="submit">Submit</button><br>
-            <a href="/login">Already a member? Login here!</a>
+            <button type="submit">Submit</button><br><br>
+            <a href="/login">Already a member? Log In Here!</a>
         </center></form>
         </body>
+            <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4><center>Questions or Concerns?</center></h4>
+            <div><center>Contact
+                <a href="">Us</a>
+            </center></div>
+        </div>
+        <div class="w3-container w3-theme-l1">
+          <p><center>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></center></p>
+          <p><center>© 2018 Kode with Klossy Detroit</center></p>
+        </div>
+    </footer>
 </html>

@@ -2,21 +2,38 @@
 <html>
     <head>
         <title>Login</title>
-         <link rel ='stylesheet' type='text/css' href='css/style.css'/>
+         <link rel ='stylesheet' type='text/css' href='css/style1.css'/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
-        <nav>
-            <a href="/">Home</a> |
-            <a href="/whyquit">Why Quit Smoking</a> |
-            <a href="/ourmethod">Our Method</a> |
-            <a><strong>Login</strong></a>
+    <body class="content">
+        <nav class="topnav">
+            <a href="/">Home</a>
+            <a href="/whyquit">Why Quit Smoking</a>
+            <a href="/ourmethod">Our Method</a>
+            <a class="active"><strong>Login</strong></a>
         </nav>
+
         <h1><center>Login</center></h1>
         <form action="dashboard" method="post"><center>
             <input type="text" name="username" placeholder="Username" size="50"><br><br>
             <input type="text" name="password" placeholder="Password" size="50"> <br><br>
-            <button type="submit">Submit</button><br>
+            <button type="submit">Submit</button><br><br>
             <a href="/signup">Not a member? Sign up today!</a>
         </center></form>
     </body>
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4><center>Questions or Concerns?</center></h4>
+            <div><center>Contact
+                <a href="">Us</a>
+            </center></div>
+        </div>
+        <div class="w3-container w3-theme-l1">
+          <p><center>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></center></p>
+          <p><center>© 2018 Kode with Klossy Detroit</center></p>
+        </div>
+    </footer>
 </html>
